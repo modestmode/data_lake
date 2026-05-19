@@ -1,5 +1,7 @@
 # MinIO runtime data
 minio-data/
+postgres-data/
+airflow/
 
 # Environment variables
 .env

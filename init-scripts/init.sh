@@ -4,6 +4,7 @@ set -e
 # 1. Create the second database
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
     CREATE DATABASE minio_metastore;
+    CREATE DATABASE airflow_metastore;
 EOSQL
 
 # 2. Initialize tables in iceberg_metastore (automatically created by POSTGRES_DB)
